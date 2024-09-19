@@ -22,8 +22,9 @@ function calcularEdad() {
 }
 
 function esNumero(dato) {
-  if (isNaN(dato)) {
-    return false;
-  }
+ if (dato.trim().length == 0 || Number.isNaN(+dato)) {
+  return false;
+ } else {
   return true;
+ }
 }
