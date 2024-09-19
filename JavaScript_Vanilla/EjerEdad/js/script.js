@@ -7,6 +7,14 @@ const respuesta3 = document.querySelector('#respuesta3');
 
 /* FUNCIONES */
 
+function esNumero(dato) {
+  if (dato.trim().length == 0 || Number.isNaN(+dato)) {
+   return false;
+  } else {
+   return true;
+  }
+ }
+
 function calcularEdad() {
   const edad = inputEdad.value;
   if (edad >= 18) {
@@ -19,12 +27,4 @@ function calcularEdad() {
     respuesta2.textContent = "No, no puedes entrar en la fiesta";
     respuesta3.textContent = "Si, tiene entrada gratis"
   }
-}
-
-function esNumero(dato) {
- if (dato.trim().length == 0 || Number.isNaN(+dato)) {
-  return false;
- } else {
-  return true;
- }
 }
