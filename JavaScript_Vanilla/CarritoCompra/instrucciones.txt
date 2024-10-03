@@ -1,1 +1,1 @@
-poner un evento al container padre de las cards, cuando solo haga clic en los botones que se ejecute ese evento del container padre, y se añadira a la cesta/carro
+poner un evento al container padre de las cards, cuando solo haga clic en los botones que se ejecute ese evento del container padre, y se añadira el producto a la cesta/carro  
