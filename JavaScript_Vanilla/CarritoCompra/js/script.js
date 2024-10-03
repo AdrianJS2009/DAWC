@@ -9,6 +9,7 @@ let articulosCarrito = []; // Array donde guardaré los cursos añadidos al carr
 cargarEventListeners();
 
 function cargarEventListeners() {
+  // Uso de la delegación de eventos para agregar al carrito al contenido de la lista de cursos
   listaCursos.addEventListener("click", agregarCurso);
 
   // Vaciar el carrito
@@ -17,7 +18,7 @@ function cargarEventListeners() {
     limpiarHTML();
   });
 
-  // Eliminar cursos del carrito (delegación de eventos)
+  // Uso de la delegación de eventos para eliminar un curso del carrito
   carrito.addEventListener("click", eliminarCurso);
 }
 
@@ -62,7 +63,7 @@ function leerDatosCurso(curso) {
   carritoHTML();
 }
 
-// Eliminar un curso del carrito en el HTML y en el array
+// Aqui tambien uso la delegación de eventos para eliminar un curso del carrito
 function eliminarCurso(e) {
   if (e.target.classList.contains("borrar-curso")) {
     const cursoId = e.target.getAttribute("data-id");
